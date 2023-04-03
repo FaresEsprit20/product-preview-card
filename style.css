@@ -1,0 +1,192 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+:root {
+/*colors*/
+/*primary*/
+--darkCyan : hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+/*neutral colors*/
+--veryDarkBlue: hsl(212, 21%, 14%);
+--darkGrayishBlue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+}
+
+html,body{
+   margin: 0;
+   height: 100%;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--cream);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.product-view {
+    display: flex;
+    border: none;
+    border-radius: 2%;
+    background-color: var(--white);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.product-image {
+    background-image: url("images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;   
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 40px 30px 40px;
+}
+
+
+.product-container {
+ width: 50%;
+ background-color: white;
+}
+
+.title-small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--darkGrayishBlue);
+    text-transform: uppercase;
+}
+
+.title-medium {
+    font-family: 'Fraunces',serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--veryDarkBlue);  
+    margin-top: -8px;
+    line-height: 0.9;
+   
+}
+
+.text-content {
+    color: var(--darkGrayishBlue);
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 14px;
+    max-width: 190px;
+    word-wrap: break-word;
+    margin-top: -5px;
+}
+.text-box {
+    max-width: 170px;
+    word-wrap: break-word;
+}
+
+
+
+.price-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.new-price {
+    font-family: 'Fraunces';
+    margin-right: 20px;
+    color: var(--darkCyan);
+    font-weight: bold;
+}
+
+.old-price {
+    color: var(--darkGrayishBlue);
+    text-decoration: line-through;
+}
+
+.flat-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkCyan);
+    color: var(--white);
+    border: 0px transparent solid;
+    border-radius: 5%;
+    min-width: 180px;
+    min-height: 40px;
+}
+
+.btn-text {
+  margin-left: 10px;
+
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+       margin: 0;
+       padding: 0;
+    }
+   
+ 
+    .product-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        margin-top: -50%; 
+    }
+    
+    .product-image {
+        background-image: url("images/image-product-desktop.jpg");
+        min-height: 200px;
+        width: 100%;
+   
+       
+    }
+    .product-container {
+        min-height: 200px;
+        width: 100%;
+        background-color: white;
+       }
+
+    .product-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+   button {
+    cursor: pointer;
+   }
+    
+    .btn-text {
+      margin-left: 10px;
+    
+    }
+ 
+  }
+    
